@@ -1,0 +1,14 @@
+#se1.py--->main program.. resulting the modules with impoer statement 
+import test1
+import greet
+import calendar
+print("val of pi={}".format(test1.pi)) #we are re-using the var pim of some program in other program
+
+greet.greetperson("Ramu") #we are re-using the function greetperson() of some program in other program
+
+greet.greetperson("Rossum")
+greet.greetperson("Ritche")
+print("----------------------------")
+print(calendar.month(2023,4))
+
+

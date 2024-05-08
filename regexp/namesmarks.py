@@ -1,0 +1,17 @@
+#namesmarks.py 
+import re
+studinfo="Arindam got 90 marks, Gosling got 99 marks, Rossum got 99 marks, Ramesh got 66, Ram got 88 marks and Jay got 77 marks"
+print("--------------------------------------") 
+print("Student Marks")
+print("--------------------------------------") 
+markslist=re.findall("\d{2}",studinfo)
+for marks in markslist:
+	print("\t{}".format(marks))
+print("--------------------------------------") 
+print("--------------------------------------") 
+print("Student Names")
+print("--------------------------------------") 
+names=re.finditer("[A-Z][a-z]+",studinfo)
+for name in names:
+	print("\t{}".format(name.group()))
+print("--------------------------------------") 

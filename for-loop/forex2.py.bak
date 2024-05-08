@@ -1,0 +1,8 @@
+#forex2.py
+lst=[10,"KVR","OUCET",12.34,"NIT",True]
+print("Element in List:")
+print("-"*40)
+for val in lst:
+	print(val)
+else:
+	print("-"*40)

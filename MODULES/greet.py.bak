@@ -1,0 +1,13 @@
+#greet.py
+
+def greetperson(sname):
+	print("Hi: {} Good Evening".format(sname))
+
+
+#main program
+greetperson("Rossum")
+greetperson("James Gosling")
+greetperson("Dennis Ritche")
+
+
+

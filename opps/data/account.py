@@ -1,0 +1,12 @@
+#account.py----treated as module 
+class Account:
+	def __init__(self): 
+		self.__acno=10 
+		self.cname="Avinash" 
+		self.__bal=3.4 
+		self.__pin=1234 
+		self.bname="SBI"
+
+	def __openPinCover(self): 
+		print("Ur pin is={}".format(self.__pin))
+	

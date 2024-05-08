@@ -1,0 +1,10 @@
+#FileWriteEx2.py
+wp=open("emp.data","a")
+lst=[59,"Sai",44.25,"AP"]
+tpl=(90,"Ravi","MP") 
+wp.writelines(str(lst)+"\n")
+wp.writelines(str(tpl))
+s="Python\n is an\n oop lang"
+wp.writelines(s)
+print("Data written to the file--verify")
+

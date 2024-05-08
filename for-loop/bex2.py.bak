@@ -1,0 +1,17 @@
+#bex2.py
+lst=[10,"shyam",34.56,True,"HYD",2+3j]
+i=0
+while(i<len(lst)):
+	if(lst[i]==True):
+		break
+	print(lst[i])
+	i=i+1
+else:
+	print("i am from else...while")
+print("other statements in the progarm")
+
+
+
+
+
+

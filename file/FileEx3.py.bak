@@ -1,0 +1,10 @@
+#FileEx3.py
+wp=open("emp.data","w+")
+print("File Opened in write mode successfully:")
+print("Type of wp=",type(wp))   #TextIOWrapper
+print("---------------------------------------")
+print("File Opening Mode=",wp.mode)   #w+
+print("is it readable?=",wp.readable())  #True
+print("is it writable?=",wp.writable()) #True 
+print("---------------------------------------")
+

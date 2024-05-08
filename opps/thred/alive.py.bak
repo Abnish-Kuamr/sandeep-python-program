@@ -1,0 +1,19 @@
+#alive.py
+import threading,time
+def emp():
+	print("Employee started working...")
+	print("is emp thread alive?=",threading.current_thread().is_alive()) #true
+	time.sleep(10)
+	print("Employee stopped working...")
+
+#main program
+print("office opend by main thread")
+t1=threading.Thread(target=emp)
+t1.start()
+print("is main thread alive?=",threading.current_thread().is_alive()) #true
+t1.join()
+print("is main thread alive?=",threading.current_thread().is_alive()) #false
+print("is child thread alive?=",t1.is_alive())
+print("office closed")
+
+

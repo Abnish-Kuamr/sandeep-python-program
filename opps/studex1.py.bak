@@ -1,0 +1,17 @@
+#studex1.py
+
+class Student:pass   # here Student is called Class Name-->Programmer-defined data type
+
+
+
+
+
+#main program 
+so1=Student()
+print("Id of so1=",id(so1))
+print("content of so=",so1. dict ) # { } #add Instance Data members to an object so1 so1.stno=100
+so1.sname="KVR" 
+so1.marks=55.55 #display the data
+print("{}\t{}\t{}".format(so1.stno,so1.sname,so1.marks))
+
+

@@ -1,0 +1,5 @@
+#client2.py----> This program accept a number from kbd at client, 
+                 #send to server and get its square.
+import socket 
+s=socket.socket() 
+s.connect(("localhost",9999) )

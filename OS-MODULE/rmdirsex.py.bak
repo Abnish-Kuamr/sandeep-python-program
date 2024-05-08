@@ -1,0 +1,9 @@
+#rmdirsex.py
+import os
+try:
+	os.removedirs("e:\mango/apple") 
+	print("Folder(s) removed--verify") 
+except OSError:
+	print("Specified Folder is not empty:")
+
+

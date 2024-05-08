@@ -1,0 +1,5 @@
+#listfiles.py 
+import os 
+kvr=os.walk(".") 
+print(kvr)
+

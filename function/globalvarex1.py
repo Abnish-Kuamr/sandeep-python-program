@@ -1,0 +1,16 @@
+#globalvarex1.py
+crs="PYTHON" #global variable
+def learnds():
+  print("To learn DATA SCIENCE we need programming lang {}".format(crs))
+def learniot():
+  print("To learn IOT we need programming lang {}".format(crs))
+def learnml():
+  print("To learn ML we need programming lang {}".format(crs))
+
+
+#main program
+learnds()
+learniot()
+learnml()
+
+

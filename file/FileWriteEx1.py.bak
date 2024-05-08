@@ -1,0 +1,10 @@
+#program for wrting the data to the file 
+#FileWriteEx1.py
+wp=open("addr.data","w") 
+wp.write("TantiTech\n") 
+wp.write("23,jaibhimanagar\n") 
+wp.write("karnatka\n")
+print("Data written to the file--verify")
+
+ 
+

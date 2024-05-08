@@ -1,0 +1,12 @@
+#contex2.py
+#program display +ve numbere and -ve number separately.
+lst=[10,-20,30,40,-50,-60,70,0]
+for val in lst:
+	if(val<=0):
+		continue
+	print("\t",val)
+print("-------------------------")
+for val in lst:
+	if(val>=0):
+		continue
+	print("\t",val)

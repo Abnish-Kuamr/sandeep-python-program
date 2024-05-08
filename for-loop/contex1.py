@@ -1,0 +1,9 @@
+#contex1.py
+#program printing those characters except H and Y letters
+s="PYTHON"
+for x in s:
+	if(x=='H') or (x=='Y'):
+		continue
+	print("\t",x)
+else:
+	print("i am in else...for loop")

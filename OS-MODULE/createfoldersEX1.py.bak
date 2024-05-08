@@ -1,0 +1,5 @@
+#createfoldersEX1.py
+import os
+os.makedirs("e:\mango/apple/grapes") 
+print("Folder Hierarchy Created..")
+

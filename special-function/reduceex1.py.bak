@@ -1,0 +1,17 @@
+#reduceex1.py
+import functools
+print("Enter List of Value separated by space:")
+lst=[int (x) for x in input().split()]
+
+big=functools.reduce(lambda x,y: x if (x>y) else y, lst)
+small=functools.reduce(lambda x,y: x if (x<y) else y, lst)
+print("-------------------------------------------")
+print("Original Elements:{}".format(lst))
+print("Big={}".format(big))
+print("Small={}".format(small))
+print("-------------------------------------------")
+
+lst.sort()
+print("Sorted Elements={}".format(lst))
+print("Second Biggest={}".format(lst(len(lst)-2]))
+

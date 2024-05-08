@@ -1,0 +1,9 @@
+#ex1.py
+a=10
+b=10
+print("Line 4 : a={}".format(a))
+print("Line 5 : b={}".format(b))
+c=a/b  
+print("Line 7 : c={}".format(c))
+print("Program executed Sucessfully:")
+

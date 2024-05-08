@@ -1,0 +1,34 @@
+#bank.py---treated as a module
+from bankexcept import DepositError 
+from bankexcept import WithDrawError
+from bankexcept import InSuffFundError 
+acbal=500.00
+
+def	deposit():
+	damt=float(input("Enter the amount to deposit:")) #ValueError 
+	if(damt<=0):
+		raise DepositError
+	else:
+		global acbal 
+		acbal=acbal+damt
+		print("U Have Deposited Rs:{}".format(damt)) 
+		print("Available Bal after deposit: {}".format(acbal))
+
+def	withdraw():
+	wamt=float(input("Enter the amount to withdraw:")) # ValueError 
+	if(wamt<=0):
+		raise WithDrawError
+	else:
+		global acbal 
+		if(wamt>acbal):
+			raise InSuffFundError
+		else:
+			acbal=acbal-wamt
+			print("Take the cash and enjoy!")
+			print("Available Bal after with draw: {}".format(acbal))
+ 
+
+def balenq():
+	print("UR AVAILABLE BALANCE: {}".format(acbal))
+
+

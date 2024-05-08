@@ -1,0 +1,7 @@
+#test1.py--->file name--->act as a module name 
+pi=3.14  #data
+
+#re-using the data many time same program 
+print("val of pi={}".format(pi))
+print("val of pi={}".format(pi))
+print("val of pi={}".format(pi))

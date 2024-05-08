@@ -1,0 +1,5 @@
+#bankexcept.py---->treated as a module name
+class DepositError(BaseException):pass
+class WithDrawError(Exception):pass
+class InSuffFundError(Exception):pass
+

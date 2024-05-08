@@ -1,0 +1,19 @@
+#approach4.py
+
+#approach4----Logic
+#------------------------------------------------
+#Taking input:--- Function Call(inside)
+#Processing:---Function Body(inside)
+#Giving Output:---Function Body(outside)
+#-------------------------------------------------
+def addition():
+	a=float(input("Enter First value:"))
+	b=float(input("Enter Second value:"))
+	c=a+b
+	return a,b,c
+
+#main program
+a,b,c=addition()
+print("sum of {} and {}={}".format(a,b,c))
+
+

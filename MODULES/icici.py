@@ -1,0 +1,23 @@
+#icici.py--->file name act as module name
+
+addr="HNO:3-4-5 Ammerpet\nHyderbad\nIndia-560066"   #Data
+
+def callntrest(p,t,r):        #function
+	si=(p*t*r)/100
+	totamt=si+p
+	print("-"*50)
+	print("Interest Calculation:")
+	print("-"*50)
+	print("Principle Amount:{}".format(p))
+	print("Time:{}".format(t))
+	print("Rate of Interest:{}".format(r))
+	print("---------------------------------")
+	print("Simple Interest:{}".format(si))
+	print("Total Amount to pay:{}".format(totamt))
+	print("------------------------------------")
+	print("-"*50)
+
+
+
+
+

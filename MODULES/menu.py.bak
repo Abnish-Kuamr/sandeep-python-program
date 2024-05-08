@@ -1,0 +1,15 @@
+#menu.py
+def menuop():
+	print("="*50)
+	print("A R I T H M E T I C  O P E R A T I O N S")
+	print("="*50)
+	print("\t1.Addition:")
+	print("\t2.Substraction:")
+	print("\t3.Multiplication:")
+	print("\t4.Division:")
+	print("\t5.Modulo Division:")
+	print("\t6.Exponentation:")
+	print("\t7.Exit:")
+	print("="*50)
+
+

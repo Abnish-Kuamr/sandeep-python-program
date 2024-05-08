@@ -1,0 +1,8 @@
+#ex3.py
+try:
+	a=10
+	b=0
+	c=a/b
+except ZeroDivisionError as kvr:
+	print(kvr)
+

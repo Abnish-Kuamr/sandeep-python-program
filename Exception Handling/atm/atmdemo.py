@@ -1,0 +1,43 @@
+#atmdemo.py
+from atmmenu import atmmenu
+from bankexcept import DepositError 
+from bankexcept import WithDrawError
+from bankexcept import InSuffFundError 
+from bank import deposit
+from bank import withdraw 
+from bank import balenq 
+import sys
+
+while(True):
+	try:
+		atmmenu()
+		ch=int(input("Enter ur Choice:"))
+		if(ch==1):
+			try:
+				deposit()
+			except ValueError:
+				print("Don't try to deposit strs/alpha-numeric/special symbols:")
+			except DepositError:
+				print("Don't try to deposit -ve and zero amount:")
+		elif(ch==2):
+			try:
+				withdraw()
+			except ValueError:
+				print("Don't try to withdraw strs/alpha-numeric/special symbols:")
+			except WithDrawError:
+				print("Don't try to withdraw -ve and zero amount:")
+			except InSuffFundError:
+				print("U don't have sufficient Funds--read python!")
+		elif(ch==3):
+			balenq()
+		elif(ch==4):
+			print("Thanks for using this App!")
+			sys.exit()
+		else:
+			print("Ur choice of Operation is wrong-Select Properly")
+	except ValueError:
+		print("Don't Enter strs/alpha-numeric/special symbols as a choice:")
+	
+
+
+

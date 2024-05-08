@@ -1,0 +1,10 @@
+#base.py
+def powerton():
+	x=int(input("Enter the base value:"))
+	n=int(input("Enter the power value:"))
+	result=x**n
+	return x,n,result
+
+#main program
+x,n,res=powerton()
+print("power({},{}={}".format(x,n,res))
